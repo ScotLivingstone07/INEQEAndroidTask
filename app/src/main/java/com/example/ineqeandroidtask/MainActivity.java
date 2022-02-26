@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
                     //Time Convert for sunset
                     long epochSunset = Long.parseLong(String.valueOf(sunset));
                     Date sunset12hr= new Date( epochSunset * 1000 );
-                    //Time Convert for current time
+                    //Time Convert to find out the day
                     long epochTime = Long.parseLong(String.valueOf(time));
                     Date day= new Date( epochTime * 1000 );
                     Calendar c = Calendar.getInstance();
@@ -170,31 +170,31 @@ public class MainActivity extends AppCompatActivity {
                     JSONObject jsonObjectWind5 = dailyForecast5.getJSONObject("wind");
                     double speed5 = jsonObjectWind5.getInt("speed");
                     double direction5 = jsonObjectWind5.getInt("deg");
-
+                    //Time Convert to find out the day
                     long epochTime = Long.parseLong(String.valueOf(time));
                     Date day= new Date( epochTime * 1000 );
                     Calendar c = Calendar.getInstance();
                     c.setTime(day);
                     String dayText = new SimpleDateFormat("EEEE").format(day);
-
+                    //Time Convert to find out the day
                     long epochTime2 = Long.parseLong(String.valueOf(time2));
                     Date day2= new Date( epochTime2 * 1000 );
                     Calendar c2 = Calendar.getInstance();
                     c2.setTime(day2);
                     String dayText2 = new SimpleDateFormat("EEEE").format(day2);
-
+                    //Time Convert to find out the day
                     long epochTime3 = Long.parseLong(String.valueOf(time3));
                     Date day3= new Date( epochTime3 * 1000 );
                     Calendar c3 = Calendar.getInstance();
                     c3.setTime(day3);
                     String dayText3 = new SimpleDateFormat("EEEE").format(day3);
-
+                    //Time Convert to find out the day
                     long epochTime4 = Long.parseLong(String.valueOf(time4));
                     Date day4= new Date( epochTime4 * 1000 );
                     Calendar c4 = Calendar.getInstance();
                     c4.setTime(day4);
                     String dayText4 = new SimpleDateFormat("EEEE").format(day4);
-
+                    //Time Convert to find out the day
                     long epochTime5 = Long.parseLong(String.valueOf(time5));
                     Date day5= new Date( epochTime5 * 1000 );
                     Calendar c5 = Calendar.getInstance();
